@@ -1,19 +1,19 @@
 
+#%%
 
 from collections import deque
-import pandas as pd
 import numpy as np 
 from datetime import datetime
 import json
 import random
-import time
-import gym 
 
 from tensorflow.keras.models import Model
-from tensorflow.keras.layers import Input, Dense, Dropout
-from tensorflow.keras.optimizers import RMSprop, Adam
+from tensorflow.keras.layers import Input, Dense
+from tensorflow.keras.optimizers import Adam
 from tensorflow.keras.models import load_model
 
+
+#%%
 
 class brain:
     def __init__(self, env, version, REPLAYMEMORY_SIZE, TARGETUPDATERATE, BATCHSIZE,

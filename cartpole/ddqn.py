@@ -1,22 +1,16 @@
 
 
 from collections import deque
-import pandas as pd
 import numpy as np 
 from datetime import datetime
 import json
 import random
-import time
-import gym 
 
-
-from IPython.display import clear_output
 
 from tensorflow.keras.models import Model
-from tensorflow.keras.layers import Input, Dense, Dropout
-from tensorflow.keras.optimizers import RMSprop, Adam
+from tensorflow.keras.layers import Input, Dense
+from tensorflow.keras.optimizers import Adam
 from tensorflow.keras.models import load_model
-
 
 
 class brain:
